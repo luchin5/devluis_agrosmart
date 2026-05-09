@@ -1,3 +1,4 @@
-## Bienvenido al proyecto DigiAqp - AgroSmart
+# Bienvenido al proyecto DigiAqp - AgroSmart
 
-![Tractor trabajando](https://gif-vif.com)
+
+https://lottiefiles.com/free-animation/afro-man-farmer-online-agriculture-service-application-wheat-fields-growth-XTM0BbZfhM
