@@ -1,2 +1,0 @@
-# Inicianod proyecto - 2026
-Empezaremos un sistema embebido
