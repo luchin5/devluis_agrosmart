@@ -1,3 +1,4 @@
+console.log('ARCHIVO PRINCIPAL CARGADO');
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
@@ -19,7 +20,7 @@ app.use(express.json());
 
 // Rutas
 app.use('/api_piosmart/v1', routeUsers);
-
+console.log('Rutas de usuario configuradas en /api_piosmart/v1');
 // Puerto de escucha
 const PORT = process.env.PORT;
 app.listen(PORT, () => {

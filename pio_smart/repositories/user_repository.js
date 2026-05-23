@@ -11,8 +11,12 @@ import { db_pool } from "../config/config.js";
 // Objeto general de exportación de métodos de usuario
 const userRepository = {
     // Método para obtener todos los usuarios
+   
     getObtenerUuarios:async ()  => {
+         console.log('Inicializando repositorio de usuarios...'  );
+    
         try{
+            console.log('Obteniendo usuarios desde la base de datsssssssssssssssssss...');
             const usuarios = await db_pool.any('SELECT * FROM usuario.fun_obtener_usuarios()');
             return usuarios;
         }
