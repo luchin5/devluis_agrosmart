@@ -11,6 +11,7 @@ import {userService} from '../services/user_service.js';
 // Funciones de controlador de usuario exportables
 export const userController = async (req, res) => {
     try {
+        console.log('Controlador de usuario: Recibiendo solicitud para obtener usuarios...');
         const usuarios = await userService();
         if (!usuarios || usuarios.length === 0) {
             return res.status(404).json({ error: 'No se encontraron usuarios' });
