@@ -4,6 +4,18 @@ import cors from 'cors';
 import morgan from 'morgan';
 
 import routeUsers from './routes/user_route.js';
+import routeActuador from './routes/actuador_route.js';
+import routeConfiguracion from './routes/configuracion_route.js';
+import routeCorral from './routes/corral_route.js';
+import routeDispositivoIot from './routes/dispositivo_iot_route.js';
+import routeEvento from './routes/evento_route.js';
+import routeLoteAves from './routes/lote_aves_route.js';
+import routeMedicion from './routes/medicion_route.js';
+import routeMetricaSemanal from './routes/metrica_semanal_route.js';
+import routeNivelEvento from './routes/nivel_evento_route.js';
+import routeNotificacion from './routes/notificacion_route.js';
+import routeSensor from './routes/sensor_route.js';
+import routeSuscripcion from './routes/suscripcion_route.js';
 
 const app = express();
 
@@ -20,6 +32,19 @@ app.use(express.json());
 
 // Rutas
 app.use('/api_piosmart/v1', routeUsers);
+app.use('/api_piosmart/v1', routeActuador);
+app.use('/api_piosmart/v1', routeConfiguracion);
+app.use('/api_piosmart/v1', routeCorral);
+app.use('/api_piosmart/v1', routeDispositivoIot);
+app.use('/api_piosmart/v1', routeEvento);
+app.use('/api_piosmart/v1', routeLoteAves);
+app.use('/api_piosmart/v1', routeMedicion);
+app.use('/api_piosmart/v1', routeMetricaSemanal);
+app.use('/api_piosmart/v1', routeNivelEvento);
+app.use('/api_piosmart/v1', routeNotificacion);
+app.use('/api_piosmart/v1', routeSensor);
+app.use('/api_piosmart/v1', routeSuscripcion);
+
 console.log('Rutas de usuario configuradas en /api_piosmart/v1');
 // Puerto de escucha
 const PORT = process.env.PORT;

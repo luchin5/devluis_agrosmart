@@ -17,7 +17,7 @@ const userRepository = {
     
         try{
             console.log('Obteniendo usuarios desde la base de datsssssssssssssssssss...');
-            const usuarios = await db_pool.any('SELECT * FROM usuario.fun_obtener_usuarios()');
+            const usuarios = await db_pool.any('SELECT * FROM usuario.listar_usuarios()');
             return usuarios;
         }
         catch(error){
