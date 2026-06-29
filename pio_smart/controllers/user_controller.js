@@ -1,4 +1,4 @@
-import {userService} from '../services/user_service.js';
+import {getuserService} from '../services/user_service.js';
 /**
  * CAPA DE CONTROLADORES PARA USUARIOS
  * 
@@ -9,10 +9,10 @@ import {userService} from '../services/user_service.js';
  */
 
 // Funciones de controlador de usuario exportables
-export const userController = async (req, res) => {
+export const getUserController = async (req, res) => {
     try {
         console.log('Controlador de usuario: Recibiendo solicitud para obtener usuarios...');
-        const usuarios = await userService();
+        const usuarios = await getuserService();
         if (!usuarios || usuarios.length === 0) {
             return res.status(404).json({ error: 'No se encontraron usuarios' });
         }

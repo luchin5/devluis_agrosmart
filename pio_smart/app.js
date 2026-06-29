@@ -49,5 +49,7 @@ console.log('Rutas de usuario configuradas en /api_piosmart/v1');
 // Puerto de escucha
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
+
     console.log(`PIO SMART EJECUTANDOSE 🐤: http://localhost:${PORT}`);
+    console.log("--------------------------------");
 });

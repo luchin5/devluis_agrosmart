@@ -8,7 +8,7 @@ import userRepository from "../repositories/user_repository.js";
  */
 
 // Funciones de servicio de usuario exportables
-export const userService = async () => {
+export const getuserService = async () => {
     try {
         const usuarios = await userRepository.getObtenerUuarios();
         return usuarios;

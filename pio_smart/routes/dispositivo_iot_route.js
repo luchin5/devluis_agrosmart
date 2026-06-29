@@ -1,4 +1,4 @@
-import { dispositivoIotController } from "../controllers/dispositivo_iot_controller.js";
+import { getdispositivoIotController,postDispositivoIotController } from "../controllers/dispositivo_iot_controller.js";
 import express from 'express';
 
 /**
@@ -8,6 +8,7 @@ import express from 'express';
 const routeDispositivoIot = express.Router();
 
 // Ruta para obtener todos los dispositivos IoT
-routeDispositivoIot.get('/dispositivos', dispositivoIotController);
+routeDispositivoIot.get('/dispositivos', getdispositivoIotController);
+routeDispositivoIot.post('/dispositivos', postDispositivoIotController);
 
 export default routeDispositivoIot;
