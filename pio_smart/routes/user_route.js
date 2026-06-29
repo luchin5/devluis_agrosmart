@@ -1,4 +1,4 @@
-import { userController } from "../controllers/user_controller.js";
+import { getUserController } from "../controllers/user_controller.js";
 import express from 'express';
 /** * CAPA DE RUTAS PARA USUARIOS
  * 
@@ -11,6 +11,6 @@ import express from 'express';
 const routeUsers = express.Router();
 
 // Ruta para obtener todos los usuarios
-routeUsers.get('/usuarios', userController);
+routeUsers.get('/usuarios', getUserController);
 
 export default routeUsers;

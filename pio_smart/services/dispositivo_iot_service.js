@@ -7,7 +7,7 @@ import dispositivoIotRepository from "../repositories/dispositivo_iot_repository
  * de la capa de datos.
  */
 
-export const dispositivoIotService = async () => {
+export const getdispositivoIotService = async () => {
     try {
 
         const dispositivos =
@@ -24,4 +24,19 @@ export const dispositivoIotService = async () => {
 
         throw error;
     }
+}
+
+export const postDispositivoIotService = async (dispositivo) => {
+    try {
+        const resultado = await dispositivoIotRepository.postDispositivo(dispositivo);
+        return resultado;
+    }
+    catch (error) {
+        console.error(
+            'Error en el servicio de dispositivos IoT al crear dispositivo:',
+            error
+        );
+        throw error;
+    }
+
 }
